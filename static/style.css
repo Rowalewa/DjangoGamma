@@ -1,0 +1,60 @@
+.emp_reg_form_body{
+    padding-top: 215px;
+    padding-bottom: 215px;
+    background-color: green;
+    padding-left: 600px;
+}
+.employee_form{
+    background-color: darkslategray;
+    width: 30%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px;
+}
+.employee_form input{
+    width: 100%;
+    box-shadow: 5px 5px brown;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 3vh;
+}
+.employee_form button{
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+}
+.employee_form button:hover{
+    background-color: blue;
+    color: yellow;
+}
+.next_of_kin_form_body{
+    padding-top: 215px;
+    padding-bottom: 215px;
+    background-color: green;
+    padding-left: 600px;
+}
+.next_of_kin_form{
+    background-color: gold;
+    padding: 50px;
+    border-radius: 30px;
+    width: 40%;
+    text-align: center;
+}
+.next_of_kin_form input{
+    width: 100%;
+    box-shadow: 5px 5px brown;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 3vh;
+}
+.next_of_kin_form button{
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+}
+.next_of_kin_form button:hover{
+    background-color: magenta;
+    color: green;
+}

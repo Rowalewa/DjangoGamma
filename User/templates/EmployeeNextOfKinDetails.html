@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="icon" href="{% static 'images/emp_icon.png' %}">
+    <title>Employee Next of Kin Form</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+<div class="next_of_kin_form_body">
+<form action="" method="POST" class="next_of_kin_form">
+    {% csrf_token %}
+    <h4>Employee's Next Of Kin Form</h4>
+    {{ form.as_p }}
+    <button type="submit" name="submit">Submit</button>
+</form>
+{% if messages %}
+    {% for message in messages %}
+        <h1>{{ message }}</h1>
+    {% endfor %}
+{% endif %}
+</div>
+</body>
+</html>

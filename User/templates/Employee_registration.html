@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Employee Registration</title>
+    <link rel="icon" href="{% static 'images/emp_icon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="emp_reg_form_body">
+<form action="" method="POST" class="employee_form">
+    {% csrf_token %}
+    <h5>Employee Form</h5>
+    {{ form.as_p }}
+    <button type="submit" name="submit">Submit</button>
+</form>
+{% if messages %}
+    {% for message in messages %}
+        <h1>{{ message }}</h1>
+    {% endfor %}
+{% endif %}
+</div>
+</body>
+</html>
